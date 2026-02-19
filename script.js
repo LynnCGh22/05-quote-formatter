@@ -14,6 +14,8 @@ form.addEventListener("submit", function(event) {
   result.textContent = 
     `The ${adjective} ${noun} had one goal: to ${verb}. What happened next was unexpected.`;
 
+  result.textContent = sentence;
+
   form.reset();
 });
 
