@@ -17,7 +17,11 @@ form.addEventListener("submit", function(event) {
   const sentence = 
     `${verbIng} ${adjective} ${noun} is the real test of character. #LifeRules`;
 
-  result.textContent = sentence;
+  // Capitalize first letter
+  const capitalizedSentence =
+    sentence.charAt(0).toUpperCase() + sentence.slice(1);
+
+  result.textContent = capitalizedSentence;
 
   form.reset(); // Clear the form after submission
 });
