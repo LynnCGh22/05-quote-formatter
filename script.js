@@ -19,6 +19,6 @@ form.addEventListener("submit", function(event) {
 
   result.textContent = sentence;
 
-  form.reset();
+  form.reset(); // Clear the form after submission
 });
 
