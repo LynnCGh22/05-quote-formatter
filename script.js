@@ -11,8 +11,11 @@ form.addEventListener("submit", function(event) {
   const verb = verbInput.value;
   const adjective = adjectiveInput.value;
 
-  result.textContent = 
-    `The ${adjective} ${noun} had one goal: to ${verb}. What happened next was unexpected.`;
+   // Convert verb to -ing form (basic version)
+  const verbIng = verb + "ing";
+
+  const sentence = 
+    `${verbIng} ${adjective} ${noun} is the real test of character. #LifeRules`;
 
   result.textContent = sentence;
 
